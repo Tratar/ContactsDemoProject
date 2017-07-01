@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		3B4D473A1F06C215005A653B /* mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3B4D473B1F06C215005A653B /* Build configuration list for PBXAggregateTarget "mogenerator" */;
+			buildPhases = (
+				3B4D47401F06C55C005A653B /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = mogenerator;
+			productName = mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		3B2447261F0709920079DA15 /* ContactsRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2447251F0709920079DA15 /* ContactsRootViewController.swift */; };
+		3B24474B1F07C3C20079DA15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B24474A1F07C3C20079DA15 /* Main.storyboard */; };
+		3B4D47081F06B697005A653B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4D47071F06B697005A653B /* Assets.xcassets */; };
+		3B4D470B1F06B697005A653B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4D47091F06B697005A653B /* LaunchScreen.storyboard */; };
+		3B4D47171F06B80E005A653B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D47161F06B80E005A653B /* AppDelegate.swift */; };
+		3B4D471C1F06B8BA005A653B /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D471B1F06B8BA005A653B /* Dependencies.swift */; };
+		3B4D47231F06BB6C005A653B /* ContactsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D47221F06BB6C005A653B /* ContactsRouter.swift */; };
+		3B4D47251F06BB78005A653B /* ContactsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D47241F06BB78005A653B /* ContactsPresenter.swift */; };
+		3B4D47271F06BB8A005A653B /* ContactsPresenterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D47261F06BB8A005A653B /* ContactsPresenterState.swift */; };
+		3B4D47291F06BB9A005A653B /* ContactsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D47281F06BB9A005A653B /* ContactsInteractor.swift */; };
+		3B4D472D1F06BC28005A653B /* ContactsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D472B1F06BC28005A653B /* ContactsDetailViewController.swift */; };
+		3B4D472E1F06BC28005A653B /* ContactsMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D472C1F06BC28005A653B /* ContactsMasterViewController.swift */; };
+		3B4D47301F06BC40005A653B /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4D472F1F06BC40005A653B /* Contacts.storyboard */; };
+		3B4D47391F06BF1C005A653B /* BeeJeeContacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D47371F06BF1C005A653B /* BeeJeeContacts.xcdatamodeld */; };
+		3B4D47421F06C85A005A653B /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D47411F06C85A005A653B /* Contact.swift */; };
+		3B4D47441F06C869005A653B /* _Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D47431F06C869005A653B /* _Contact.swift */; };
+		3B4D474A1F06DE28005A653B /* DataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D47491F06DE28005A653B /* DataAccess.swift */; };
+		3B4D474C1F06DE36005A653B /* DataImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D474B1F06DE36005A653B /* DataImporter.swift */; };
+		3B4D474F1F06DEFC005A653B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4D474E1F06DEFC005A653B /* CoreData.framework */; };
+		3B4D47511F06F82F005A653B /* ContactData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D47501F06F82F005A653B /* ContactData.swift */; };
+		3B4D47531F06F8CD005A653B /* ContactDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D47521F06F8CD005A653B /* ContactDataMapper.swift */; };
+		3BB45E641F080B2F00326167 /* contactsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BB45E631F080B2F00326167 /* contactsData.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B2447251F0709920079DA15 /* ContactsRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsRootViewController.swift; sourceTree = "<group>"; };
+		3B24474A1F07C3C20079DA15 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3B4D46F81F06B697005A653B /* BeeJeeContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeeJeeContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4D47071F06B697005A653B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B4D470A1F06B697005A653B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B4D470C1F06B697005A653B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B4D47161F06B80E005A653B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B4D471B1F06B8BA005A653B /* Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		3B4D47221F06BB6C005A653B /* ContactsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsRouter.swift; sourceTree = "<group>"; };
+		3B4D47241F06BB78005A653B /* ContactsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsPresenter.swift; sourceTree = "<group>"; };
+		3B4D47261F06BB8A005A653B /* ContactsPresenterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsPresenterState.swift; sourceTree = "<group>"; };
+		3B4D47281F06BB9A005A653B /* ContactsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsInteractor.swift; sourceTree = "<group>"; };
+		3B4D472B1F06BC28005A653B /* ContactsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsDetailViewController.swift; sourceTree = "<group>"; };
+		3B4D472C1F06BC28005A653B /* ContactsMasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsMasterViewController.swift; sourceTree = "<group>"; };
+		3B4D472F1F06BC40005A653B /* Contacts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contacts.storyboard; sourceTree = "<group>"; };
+		3B4D47381F06BF1C005A653B /* BeeJeeContacts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeeJeeContacts.xcdatamodel; sourceTree = "<group>"; };
+		3B4D47411F06C85A005A653B /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		3B4D47431F06C869005A653B /* _Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Contact.swift; sourceTree = "<group>"; };
+		3B4D47491F06DE28005A653B /* DataAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAccess.swift; sourceTree = "<group>"; };
+		3B4D474B1F06DE36005A653B /* DataImporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataImporter.swift; sourceTree = "<group>"; };
+		3B4D474E1F06DEFC005A653B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3B4D47501F06F82F005A653B /* ContactData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactData.swift; sourceTree = "<group>"; };
+		3B4D47521F06F8CD005A653B /* ContactDataMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDataMapper.swift; sourceTree = "<group>"; };
+		3BB45E631F080B2F00326167 /* contactsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contactsData.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B4D46F51F06B697005A653B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4D474F1F06DEFC005A653B /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B4D46EF1F06B697005A653B = {
+			isa = PBXGroup;
+			children = (
+				3B4D46FA1F06B697005A653B /* BeeJeeContacts */,
+				3B4D46F91F06B697005A653B /* Products */,
+				3B4D474D1F06DEFB005A653B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B4D46F91F06B697005A653B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D46F81F06B697005A653B /* BeeJeeContacts.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B4D46FA1F06B697005A653B /* BeeJeeContacts */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D47141F06B6F1005A653B /* Classes */,
+				3B4D47071F06B697005A653B /* Assets.xcassets */,
+				3B4D47091F06B697005A653B /* LaunchScreen.storyboard */,
+				3B4D470C1F06B697005A653B /* Info.plist */,
+				3BB45E631F080B2F00326167 /* contactsData.json */,
+			);
+			path = BeeJeeContacts;
+			sourceTree = "<group>";
+		};
+		3B4D47141F06B6F1005A653B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D471A1F06B84B005A653B /* PresentationLayer */,
+				3B4D47191F06B834005A653B /* BusinessLogicLayer */,
+				3B4D47151F06B7E8005A653B /* ApplicationLayer */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3B4D47151F06B7E8005A653B /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D47161F06B80E005A653B /* AppDelegate.swift */,
+				3B4D471B1F06B8BA005A653B /* Dependencies.swift */,
+				3B24474A1F07C3C20079DA15 /* Main.storyboard */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		3B4D47191F06B834005A653B /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D47451F06DD99005A653B /* Services */,
+				3B4D47311F06BD2C005A653B /* Model */,
+			);
+			path = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
+		3B4D471A1F06B84B005A653B /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D471D1F06B8C4005A653B /* Modules */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		3B4D471D1F06B8C4005A653B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D471E1F06B8FA005A653B /* Contacts */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3B4D471E1F06B8FA005A653B /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D472A1F06BBE4005A653B /* View */,
+				3B4D47211F06BAC8005A653B /* Interactor */,
+				3B4D47201F06BAA9005A653B /* Presenter */,
+				3B4D471F1F06BA9D005A653B /* Router */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		3B4D471F1F06BA9D005A653B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D47221F06BB6C005A653B /* ContactsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3B4D47201F06BAA9005A653B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D47241F06BB78005A653B /* ContactsPresenter.swift */,
+				3B4D47261F06BB8A005A653B /* ContactsPresenterState.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3B4D47211F06BAC8005A653B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D47281F06BB9A005A653B /* ContactsInteractor.swift */,
+				3B4D47501F06F82F005A653B /* ContactData.swift */,
+				3B4D47521F06F8CD005A653B /* ContactDataMapper.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3B4D472A1F06BBE4005A653B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D472F1F06BC40005A653B /* Contacts.storyboard */,
+				3B4D472B1F06BC28005A653B /* ContactsDetailViewController.swift */,
+				3B4D472C1F06BC28005A653B /* ContactsMasterViewController.swift */,
+				3B2447251F0709920079DA15 /* ContactsRootViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B4D47311F06BD2C005A653B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D47361F06BDE9005A653B /* Entites */,
+				3B4D47321F06BD67005A653B /* CoreData */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B4D47321F06BD67005A653B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D47371F06BF1C005A653B /* BeeJeeContacts.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		3B4D47361F06BDE9005A653B /* Entites */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D473F1F06C518005A653B /* Human */,
+				3B4D473E1F06C4F8005A653B /* Machine */,
+			);
+			path = Entites;
+			sourceTree = "<group>";
+		};
+		3B4D473E1F06C4F8005A653B /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D47431F06C869005A653B /* _Contact.swift */,
+			);
+			path = Machine;
+			sourceTree = "<group>";
+		};
+		3B4D473F1F06C518005A653B /* Human */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D47411F06C85A005A653B /* Contact.swift */,
+			);
+			path = Human;
+			sourceTree = "<group>";
+		};
+		3B4D47451F06DD99005A653B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D47481F06DE13005A653B /* Data */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3B4D47481F06DE13005A653B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D47491F06DE28005A653B /* DataAccess.swift */,
+				3B4D474B1F06DE36005A653B /* DataImporter.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3B4D474D1F06DEFB005A653B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D474E1F06DEFC005A653B /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B4D46F71F06B697005A653B /* BeeJeeContacts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B4D470F1F06B697005A653B /* Build configuration list for PBXNativeTarget "BeeJeeContacts" */;
+			buildPhases = (
+				3B4D46F41F06B697005A653B /* Sources */,
+				3B4D46F51F06B697005A653B /* Frameworks */,
+				3B4D46F61F06B697005A653B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeeJeeContacts;
+			productName = BeeJeeContacts;
+			productReference = 3B4D46F81F06B697005A653B /* BeeJeeContacts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B4D46F01F06B697005A653B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = We;
+				TargetAttributes = {
+					3B4D46F71F06B697005A653B = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = YJ4C7F7F8K;
+						ProvisioningStyle = Automatic;
+					};
+					3B4D473A1F06C215005A653B = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = YJ4C7F7F8K;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3B4D46F31F06B697005A653B /* Build configuration list for PBXProject "BeeJeeContacts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B4D46EF1F06B697005A653B;
+			productRefGroup = 3B4D46F91F06B697005A653B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B4D46F71F06B697005A653B /* BeeJeeContacts */,
+				3B4D473A1F06C215005A653B /* mogenerator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B4D46F61F06B697005A653B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4D47301F06BC40005A653B /* Contacts.storyboard in Resources */,
+				3B4D470B1F06B697005A653B /* LaunchScreen.storyboard in Resources */,
+				3B4D47081F06B697005A653B /* Assets.xcassets in Resources */,
+				3B24474B1F07C3C20079DA15 /* Main.storyboard in Resources */,
+				3BB45E641F080B2F00326167 /* contactsData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B4D47401F06C55C005A653B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Scripts/mogenerator.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B4D46F41F06B697005A653B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4D474C1F06DE36005A653B /* DataImporter.swift in Sources */,
+				3B4D47171F06B80E005A653B /* AppDelegate.swift in Sources */,
+				3B4D47251F06BB78005A653B /* ContactsPresenter.swift in Sources */,
+				3B4D47421F06C85A005A653B /* Contact.swift in Sources */,
+				3B4D471C1F06B8BA005A653B /* Dependencies.swift in Sources */,
+				3B4D47291F06BB9A005A653B /* ContactsInteractor.swift in Sources */,
+				3B4D472E1F06BC28005A653B /* ContactsMasterViewController.swift in Sources */,
+				3B4D47231F06BB6C005A653B /* ContactsRouter.swift in Sources */,
+				3B4D47511F06F82F005A653B /* ContactData.swift in Sources */,
+				3B4D474A1F06DE28005A653B /* DataAccess.swift in Sources */,
+				3B2447261F0709920079DA15 /* ContactsRootViewController.swift in Sources */,
+				3B4D47271F06BB8A005A653B /* ContactsPresenterState.swift in Sources */,
+				3B4D472D1F06BC28005A653B /* ContactsDetailViewController.swift in Sources */,
+				3B4D47441F06C869005A653B /* _Contact.swift in Sources */,
+				3B4D47531F06F8CD005A653B /* ContactDataMapper.swift in Sources */,
+				3B4D47391F06BF1C005A653B /* BeeJeeContacts.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3B4D47091F06B697005A653B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B4D470A1F06B697005A653B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B4D470D1F06B697005A653B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B4D470E1F06B697005A653B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B4D47101F06B697005A653B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YJ4C7F7F8K;
+				INFOPLIST_FILE = BeeJeeContacts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.wecommunicate.legacy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3B4D47111F06B697005A653B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YJ4C7F7F8K;
+				INFOPLIST_FILE = BeeJeeContacts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.wecommunicate.legacy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3B4D473C1F06C215005A653B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YJ4C7F7F8K;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3B4D473D1F06C215005A653B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YJ4C7F7F8K;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B4D46F31F06B697005A653B /* Build configuration list for PBXProject "BeeJeeContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B4D470D1F06B697005A653B /* Debug */,
+				3B4D470E1F06B697005A653B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B4D470F1F06B697005A653B /* Build configuration list for PBXNativeTarget "BeeJeeContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B4D47101F06B697005A653B /* Debug */,
+				3B4D47111F06B697005A653B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B4D473B1F06C215005A653B /* Build configuration list for PBXAggregateTarget "mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B4D473C1F06C215005A653B /* Debug */,
+				3B4D473D1F06C215005A653B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3B4D47371F06BF1C005A653B /* BeeJeeContacts.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3B4D47381F06BF1C005A653B /* BeeJeeContacts.xcdatamodel */,
+			);
+			currentVersion = 3B4D47381F06BF1C005A653B /* BeeJeeContacts.xcdatamodel */;
+			path = BeeJeeContacts.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3B4D46F01F06B697005A653B /* Project object */;
+}
